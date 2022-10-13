@@ -46,7 +46,7 @@ module:
     - source:  node_modules/bootstrap/dist/js/bootstrap.bundle.min.js
       target: assets/js/bootstrap.bundle.min.js
 
-markup:
-  goldmark:
-    renderer:
-      unsafe: true
+        #markup:
+        #  goldmark:
+        #    renderer:
+        #      unsafe: true
