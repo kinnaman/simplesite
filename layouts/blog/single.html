@@ -1,0 +1,10 @@
+{{ define "title" }}
+  {{ .Title }} &ndash; {{ .Site.Title }}
+{{ end }}
+{{ define "main" }}
+<div class="container">
+  <h1 class="display-4">{{ .Title }}</h1>
+  <h6 class="text-muted">{{ .Date | time.Format ":date_long" }}</h6>
+  {{ .Content }}
+</div>
+{{ end }}

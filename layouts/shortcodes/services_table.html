@@ -1,0 +1,23 @@
+{{ if .IsNamedParams }}
+{{ $data := index $.Site.Data.services $.Params.data}}
+<div class="container">
+	<table class="table table-light bg-light">
+		<thead>
+			<tr>
+				<th scope="col">Service</th>
+				<th scope="col">Description</th>
+				<th scope="col">Price</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{ range  $data }}
+			<tr>
+				<td scope="row">{{ .service}} </td>
+				<td>{{ .description }}</td>
+				<td class="price">${{ .price }}</td>
+			</tr>
+			{{ end }}
+		</tbody>
+	</table>
+</div>
+{{- end -}}
