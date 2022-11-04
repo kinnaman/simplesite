@@ -10,7 +10,7 @@ params:
   author:
   favicon: 
   site_logo: 
-  description: 
+  description: A simple template for Hugo Sites based on Bootstrap
   background_color: 
   socialMedia:
     - name: Youtube
