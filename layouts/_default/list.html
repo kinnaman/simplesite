@@ -2,7 +2,7 @@
 <div class="container">
 	<h1 class="display-4 text-center">{{ .Title | singularize }}</h1>
 	<ul>
-		{{ range .Pages }}
+		{{ range .Paginator.Pages }}
 		<li class="list-unstyled">
 			<article>
 				<h5 class="text-muted">{{ .Date | time.Format ":date_long"}}</h5>
