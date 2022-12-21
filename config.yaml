@@ -41,9 +41,11 @@ sitemap:
   filename: sitemap.xml
 
 module:
-  module.mounts:
-    - source:  node_modules/bootstrap/dist/js/bootstrap.bundle.min.js
-      target: assets/js/bootstrap.bundle.min.js
+  mounts:
+    - source:           /node_modules/bootstrap/scss
+      target:           assets/sass/bootstrap
+    - source:           node_modules/bootstrap/dist/js/bootstrap.min.js
+      target:           static/js/bootstrap.js
 
         #markup:
         #  goldmark:
